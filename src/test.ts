@@ -3,6 +3,13 @@
 import 'zone.js/testing'
 import { getTestBed } from '@angular/core/testing'
 import { BrowserDynamicTestingModule, platformBrowserDynamicTesting } from '@angular/platform-browser-dynamic/testing'
+import '@testing-library/jasmine-dom'
+// @ts-ignore
+import JasmineDOM from '@testing-library/jasmine-dom/dist'
+
+beforeAll(() => {
+  jasmine.addMatchers(JasmineDOM)
+})
 
 declare const require: {
   context(

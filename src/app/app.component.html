@@ -1,1 +1,8 @@
-<router-outlet></router-outlet>
+<ng-container *ngIf="isLoaded; else loadingBlock">
+  <router-outlet *ngIf="isLoggedId; else authBlock" data-testid="router-root"></router-outlet>
+</ng-container>
+
+<ng-template #loadingBlock>Loading...</ng-template>
+<ng-template #authBlock>
+  <app-login data-testid="login"></app-login>
+</ng-template>
