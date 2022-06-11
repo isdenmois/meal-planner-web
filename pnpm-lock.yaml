@@ -15,7 +15,6 @@ specifiers:
   '@angular/compiler-cli': ^14.0.0
   '@angular/core': ^14.0.0
   '@angular/forms': ^14.0.0
-  '@angular/material': 14.0.0
   '@angular/platform-browser': ^14.0.0
   '@angular/platform-browser-dynamic': ^14.0.0
   '@angular/router': ^14.0.0
@@ -37,6 +36,8 @@ specifiers:
   karma-jasmine-html-reporter: ~1.7.0
   lint-staged: ^13.0.0
   prettier: ^2.6.2
+  primeicons: ^5.0.0
+  primeng: ^13.4.1
   rxjs: ~7.5.0
   simple-git-hooks: ^2.8.0
   tslib: ^2.3.0
@@ -50,11 +51,12 @@ dependencies:
   '@angular/compiler': 14.0.0_@angular+core@14.0.0
   '@angular/core': 14.0.0_rxjs@7.5.5+zone.js@0.11.5
   '@angular/forms': 14.0.0_enkwga4ygnomgefxpl7zqyrxcy
-  '@angular/material': 14.0.0_po5fpd4rjlhfojx3jfygnmvl2y
   '@angular/platform-browser': 14.0.0_bkheyas7dwy5ydavumdgkcqpgi
   '@angular/platform-browser-dynamic': 14.0.0_3snnhtiprcku4ghmbfcdfwmez4
   '@angular/router': 14.0.0_enkwga4ygnomgefxpl7zqyrxcy
   firebase: 9.8.2
+  primeicons: 5.0.0
+  primeng: 13.4.1_pah6nf7hqa25bwibe5o6k6ei3u
   rxjs: 7.5.5
   tslib: 2.4.0
   zone.js: 0.11.5
@@ -475,27 +477,6 @@ packages:
     dependencies:
       '@angular/common': 14.0.0_mms3mhj442xsi3viotv6an2mnm
       '@angular/core': 14.0.0_rxjs@7.5.5+zone.js@0.11.5
-      '@angular/platform-browser': 14.0.0_bkheyas7dwy5ydavumdgkcqpgi
-      rxjs: 7.5.5
-      tslib: 2.4.0
-    dev: false
-
-  /@angular/material/14.0.0_po5fpd4rjlhfojx3jfygnmvl2y:
-    resolution: {integrity: sha512-RNV1g7DbnlSI9rjsuqH+fO2e+IQCJEJmjBRGvx6dBYugiag4iR9ZnpHNued26UTJ+BPTemTA7a4cDzseKKB6NQ==}
-    peerDependencies:
-      '@angular/animations': ^14.0.0 || ^15.0.0
-      '@angular/cdk': 14.0.0
-      '@angular/common': ^14.0.0 || ^15.0.0
-      '@angular/core': ^14.0.0 || ^15.0.0
-      '@angular/forms': ^14.0.0 || ^15.0.0
-      '@angular/platform-browser': ^14.0.0 || ^15.0.0
-      rxjs: ^6.5.3 || ^7.4.0
-    dependencies:
-      '@angular/animations': 14.0.0_@angular+core@14.0.0
-      '@angular/cdk': 14.0.0_h2oxmoezxmskufpkmv3hz77bki
-      '@angular/common': 14.0.0_mms3mhj442xsi3viotv6an2mnm
-      '@angular/core': 14.0.0_rxjs@7.5.5+zone.js@0.11.5
-      '@angular/forms': 14.0.0_enkwga4ygnomgefxpl7zqyrxcy
       '@angular/platform-browser': 14.0.0_bkheyas7dwy5ydavumdgkcqpgi
       rxjs: 7.5.5
       tslib: 2.4.0
@@ -7626,6 +7607,29 @@ packages:
       ansi-styles: 5.2.0
       react-is: 17.0.2
     dev: true
+
+  /primeicons/5.0.0:
+    resolution: {integrity: sha512-heygWF0X5HFI1otlZE62pp6ye7sZ8om78J9au2BRkg8O7Y8AHTZ9qKMRzchZUHLe8zUAvdi6hZzzm9XxgwIExw==}
+    dev: false
+
+  /primeng/13.4.1_pah6nf7hqa25bwibe5o6k6ei3u:
+    resolution: {integrity: sha512-Dp72Yt7ORwoVYXr5r4oNTacQHUyLAdTuvXXNg9ZNjjxCdIfYZsVjTFBHBVzgEo9BpPy+/5twYy1JP/eXXDNPHg==}
+    peerDependencies:
+      '@angular/common': ^13.0.0
+      '@angular/core': ^13.0.0
+      '@angular/forms': ^13.0.0
+      primeicons: ^5.0.0
+      rxjs: ^6.0.0 || ^7.0.0
+      zone.js: ^0.10.2 || ^0.11.0
+    dependencies:
+      '@angular/common': 14.0.0_mms3mhj442xsi3viotv6an2mnm
+      '@angular/core': 14.0.0_rxjs@7.5.5+zone.js@0.11.5
+      '@angular/forms': 14.0.0_enkwga4ygnomgefxpl7zqyrxcy
+      primeicons: 5.0.0
+      rxjs: 7.5.5
+      tslib: 2.4.0
+      zone.js: 0.11.5
+    dev: false
 
   /proc-log/2.0.1:
     resolution: {integrity: sha512-Kcmo2FhfDTXdcbfDH76N7uBYHINxc/8GW7UAVuVP9I+Va3uHSerrnKV6dLooga/gh7GlgzuCCr/eoldnL1muGw==}

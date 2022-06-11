@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
-import { MatFormFieldModule } from '@angular/material/form-field'
-import { MatInputModule } from '@angular/material/input'
-import { MatButtonModule } from '@angular/material/button'
-import { MatCardModule } from '@angular/material/card'
 import { ReactiveFormsModule } from '@angular/forms'
+import { CardModule } from 'primeng/card'
+import { InputTextModule } from 'primeng/inputtext'
+import { ButtonModule } from 'primeng/button'
 import { LoginComponent } from './login/login.component'
 
 @NgModule({
   declarations: [LoginComponent],
-  imports: [CommonModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatButtonModule, MatCardModule],
+  imports: [CommonModule, ReactiveFormsModule, CardModule, InputTextModule, ButtonModule],
   exports: [LoginComponent],
 })
 export class AuthModule {}

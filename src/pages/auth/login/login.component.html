@@ -1,28 +1,31 @@
 <form (submit)="onSubmit($event)" [formGroup]="form" name="form">
-  <mat-card>
-    <mat-card-title>Login</mat-card-title>
+  <p-card header="Login">
+    <p>
+      <span class="p-input p-input-icon-left">
+        <i class="pi pi-at"></i>
+        <input pInputText type="email" placeholder="Email" name="email" formControlName="email" />
+      </span>
+      <small class="p-error block" role="error" *ngIf="form.controls.email.errors">{{
+        form.controls.email.errors!['exist']
+      }}</small>
+    </p>
 
-    <mat-card-content>
-      <p>
-        <mat-form-field appearance="fill">
-          <mat-label>Email</mat-label>
-          <input matInput name="email" formControlName="email" type="email" placeholder="Email" />
-          <mat-error *ngIf="form.controls.email.errors" role="error">{{
-            form.controls.email.errors!['exist']
-          }}</mat-error>
-        </mat-form-field>
-      </p>
+    <p>
+      <span class="p-input p-input-icon-left">
+        <i class="pi pi-key"></i>
+        <input pInputText type="password" placeholder="Password" name="password" formControlName="password" />
+      </span>
+    </p>
 
-      <p>
-        <mat-form-field appearance="fill">
-          <mat-label>Password</mat-label>
-          <input matInput name="password" formControlName="password" type="password" placeholder="Password" />
-        </mat-form-field>
-      </p>
-    </mat-card-content>
-
-    <mat-card-actions align="end">
-      <button mat-button type="submit" [disabled]="form.disabled">Log in</button>
-    </mat-card-actions>
-  </mat-card>
+    <p-footer>
+      <button
+        pButton
+        type="submit"
+        [icon]="form.disabled ? 'pi pi-spin pi-spinner' : ''"
+        iconPos="right"
+        [disabled]="form.disabled"
+        label="Log in"
+      ></button>
+    </p-footer>
+  </p-card>
 </form>
