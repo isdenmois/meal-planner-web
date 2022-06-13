@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common'
 import { NO_ERRORS_SCHEMA } from '@angular/core'
 import { ReactiveFormsModule } from '@angular/forms'
-import { fireEvent, render, RenderResult, screen } from '@testing-library/angular'
+import { fireEvent, render, screen } from '@testing-library/angular'
 
 import userEvent from '@testing-library/user-event'
 import { Auth, UserCredential } from 'firebase/auth'

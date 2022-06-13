@@ -1,0 +1,18 @@
+:host {
+  display: block;
+
+  p-progressspinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+  }
+
+  li {
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    list-style: none;
+  }
+}

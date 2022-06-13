@@ -1,6 +1,4 @@
-import { CommonModule } from '@angular/common'
 import { NO_ERRORS_SCHEMA } from '@angular/core'
-import { ReactiveFormsModule } from '@angular/forms'
 import { render, screen } from '@testing-library/angular'
 
 import { Auth } from 'firebase/auth'

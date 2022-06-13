@@ -1,0 +1,5 @@
+<p-card [header]="recipe.title" styleClass="p-card-shadow">
+  <ng-template pTemplate="header" *ngIf="recipe.imageURL">
+    <img [alt]="recipe.title" [src]="recipe.imageURL" />
+  </ng-template>
+</p-card>

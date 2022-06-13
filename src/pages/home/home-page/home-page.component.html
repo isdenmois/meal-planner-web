@@ -1,1 +1,9 @@
-<p>home-page works!</p>
+<ul *ngIf="!isLoading; else loadingBlock">
+  <li *ngFor="let recipe of recipes; trackBy: recipeTrack">
+    <app-recipe-card [recipe]="recipe"></app-recipe-card>
+  </li>
+</ul>
+
+<ng-template #loadingBlock>
+  <p-progressSpinner role="progressbar"></p-progressSpinner>
+</ng-template>
